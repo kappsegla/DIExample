@@ -9,7 +9,7 @@ public class ListStorage implements Storage{
 
     ArrayList<Customer> customers = new ArrayList<>();
 
-    ListStorage(){
+    public ListStorage(){
         //Läs in sparade kunder från fil
         loadFromFile();
     }
