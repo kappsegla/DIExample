@@ -4,12 +4,14 @@ import se.iths.martin.models.Customer;
 import se.iths.martin.storage.ListStorage;
 import se.iths.martin.storage.Storage;
 
+import javax.inject.Inject;
 import java.util.Scanner;
 
 public class CustomerHandler {
 
     Storage storage;
 
+    @Inject
     public CustomerHandler(Storage storage) {
         this.storage = storage;
     }
